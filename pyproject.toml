@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "cmx_bot"
+version = "0.1.0"
+description = ""
+authors = ["hsuanchi <a0025071@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+Flask = "^1.1.2"
+uWSGI = "^2.0.19"
+pygsheets = "^2.0.3"
+python-dotenv = "^0.15.0"
+line-bot-sdk = "^1.17.0"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^3.8.4"
+isort = "^5.6.4"
+black = "^20.8b1"
+pre-commit = "^2.8.2"
+Flask-Testing = "^0.8.0"
+coverage = "^5.3"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
