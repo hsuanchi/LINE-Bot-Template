@@ -1,5 +1,7 @@
 # LINE Bot Template
 
+[![codecov](https://codecov.io/gh/hsuanchi/LINE-Bot-Template/branch/master/graph/badge.svg?token=HN2G37H56S)](https://codecov.io/gh/hsuanchi/LINE-Bot-Template)
+
 ### 1. Side Project 原由
 
 最近加入早起團 AM 6:00 要起床打卡，看到大家用人工統計出席的方式很費時，所以寫了這隻群聊的打卡機器人，最後將程式整理成範本並包好 Docker 環境，有需要的人只需要申請 [LINE develops 帳戶](https://developers.line.biz/zh-hant/)和串接 [Google Sheets](https://pygsheets.readthedocs.io/en/stable/authorization.html#oauth-credentials) 就完成囉！
