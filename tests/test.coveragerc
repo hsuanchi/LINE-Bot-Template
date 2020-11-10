@@ -1,0 +1,11 @@
+# .coveragerc to control coverage.py
+[run]
+# branch = True
+omit =
+    */tests/*
+
+[html]
+directory = tests/htmlcov
+
+
+#https://coverage.readthedocs.io/en/v4.5.x/config.html
