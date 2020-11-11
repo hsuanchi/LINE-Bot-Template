@@ -8,39 +8,7 @@
 ## 2. Requirements
 - Python >= 3.4
 
-## 3. Set up a Virtual Environment
-可以選擇三種方法(Docker,venv,poetry)之一來建立環境：
-1. Docker
-```
-$ bash boot.sh
-```
-
-2. Python - Built-in venv
-```
-# Create your virtual environment:
-
-$ python3 -m venv venv
-
-# And enable it:
-
-$ . venv/bin/activate
-
-# Install
-
-$ pip install -r requirements.txt 
-```
-
-3. Poetry
-```
-# Install
-$ poetry install
-
-# enable
-$ poetry shell
-```
-
-
-## 4. 建置教學
+## 3. Prerequisite Setup
 
 1. 建立 [LINE develops 帳戶](https://developers.line.biz/zh-hant/)，並新增 Messaging API channel 機器人
 
@@ -61,13 +29,46 @@ export CHANNEL_SECRET='yout line bot channel secret key'
 export google_sheet_url='https://docs.google.com/spreadsheets/d/kkkkkk-aaaaaa-ssssss/'
 ```
 
-## 5. 啟動
 
-都設置好後只需要在終端機中下 bash 指令，就可以啟動 LINE Bot 囉！
-
+## 4. Setup Development Environment & Run
+可以選擇三種方法(Docker,venv,poetry)之一來建立環境：\
+▍方法1. Docker
 ```
 $ bash boot.sh
-``` 
+```
+
+▍方法2. Python - Built-in venv
+
+- Create your virtual environment
+```
+$ python3 -m venv venv
+```
+- And enable virtual environment
+```
+$ . venv/bin/activate
+```
+- Install requirements
+```
+$ pip install -r requirements.txt 
+```
+- Run Flask
+```
+$ flask run
+```
+
+▍方法3. Poetry
+- Install requirements
+```
+$ poetry install
+```
+- And enable virtual environment
+```
+$ poetry shell
+```
+- Run Flask
+```
+$ flask run
+```
 
 ## 5. 貢獻
 PRs are welcome!
