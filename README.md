@@ -3,7 +3,21 @@
 [![codecov](https://codecov.io/gh/hsuanchi/LINE-Bot-Template/branch/master/graph/badge.svg?token=HN2G37H56S)](https://codecov.io/gh/hsuanchi/LINE-Bot-Template)
 
 ## 1. Side Project 原由
-最近加入早起團 AM 6:00 要起床打卡，看到大家用人工統計出席的方式很費時，所以寫了這隻群聊的打卡機器人，最後將程式整理成範本並包好 Docker 環境，有需要的人只需要申請 [LINE develops 帳戶](https://developers.line.biz/zh-hant/)和串接 [Google Sheets](https://pygsheets.readthedocs.io/en/stable/authorization.html#oauth-credentials) 就完成囉！
+最近加入早起團 AM 6:00 要起床打卡，看到大家用手動統計出席的方式很費時，所以寫了這隻 LINE Bot 群聊的打卡機器人，只需要在群組中輸入固定字詞，機器人就會將使用者姓名、打卡時間傳送至 Google Sheet，再串接 DataStudio 將資料視覺化。
+
+#### 視覺化圖表
+<img src="https://github.com/hsuanchi/LINE-Bot-Template/blob/master/img/line_chart.jpg" width="800px" height="auto">
+
+#### 出席統計 by month
+<img src="https://github.com/hsuanchi/LINE-Bot-Template/blob/master/img/table_by_month.jpg" width="800px" height="auto">
+
+#### 出席統計 by week
+<img src="https://github.com/hsuanchi/LINE-Bot-Template/blob/master/img/table_by_week.jpg" width="800px" height="auto">
+
+#### LINE Bot Demo 群
+<img src="https://github.com/hsuanchi/LINE-Bot-Template/blob/master/img/line_bot_demo.jpg" width="200px" height="auto">
+
+如果有想建置機器人的朋友，這份程式已經整理過，並包好 Docker 環境，有需要的朋友只需要依以下步驟建立，就可以快速完成一個打卡聊天機器人囉
 
 ## 2. Requirements
 - Python >= 3.4
