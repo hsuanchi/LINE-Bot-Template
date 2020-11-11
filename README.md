@@ -31,13 +31,12 @@ export google_sheet_url='https://docs.google.com/spreadsheets/d/kkkkkk-aaaaaa-ss
 
 
 ## 4. Setup Development Environment & Run
-可以選擇三種方法(Docker,venv,poetry)之一來建立環境：\
-▍方法1. Docker
+▍Method 1 - Docker
 ```
 $ bash boot.sh
 ```
 
-▍方法2. Python - Built-in venv
+▍Method 2 - Python Built-in venv
 
 - Create your virtual environment
 ```
@@ -56,7 +55,7 @@ $ pip install -r requirements.txt
 $ flask run
 ```
 
-▍方法3. Poetry
+▍Method 3 - Poetry
 - Install requirements
 ```
 $ poetry install
@@ -70,5 +69,17 @@ $ poetry shell
 $ flask run
 ```
 
-## 5. 貢獻
+## 5. Test
+Run the following command:
+```
+$ flask test
+```
+
+To run tests with coverage report:
+```
+$ bash test.sh
+```
+
+
+## 6. 貢獻
 PRs are welcome!
