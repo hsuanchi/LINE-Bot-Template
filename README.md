@@ -2,33 +2,45 @@
 
 [![codecov](https://codecov.io/gh/hsuanchi/LINE-Bot-Template/branch/master/graph/badge.svg?token=HN2G37H56S)](https://codecov.io/gh/hsuanchi/LINE-Bot-Template)
 
-### 1. Side Project 原由
-
+## 1. Side Project 原由
 最近加入早起團 AM 6:00 要起床打卡，看到大家用人工統計出席的方式很費時，所以寫了這隻群聊的打卡機器人，最後將程式整理成範本並包好 Docker 環境，有需要的人只需要申請 [LINE develops 帳戶](https://developers.line.biz/zh-hant/)和串接 [Google Sheets](https://pygsheets.readthedocs.io/en/stable/authorization.html#oauth-credentials) 就完成囉！
 
-### 2. 使用技術
-BackEnd Framework:
-- Flask
+## 2. Requirements
+- Python >= 3.4
 
-Extension:
-- [pygsheets](https://pygsheets.readthedocs.io/en/stable/)
-- [line-bot-sdk-python](https://github.com/line/line-bot-sdk-python)
+## 3. Set up a Virtual Environment
+可以選擇三種方法(Docker,venv,poetry)之一來建立環境：
+1. Docker
+```
+$ bash boot.sh
+```
 
-Testing:
-- Unittest
-- Mock
-- Coverage
+2. Python - Built-in venv
+```
+# Create your virtual environment:
 
-Pre-commit:
-- Flake8
-- Black
-- Unittest
+$ python3 -m venv venv
 
-Environment:
-- Poetry
-- Docker
+# And enable it:
 
-### 3. 建置教學
+$ . venv/bin/activate
+
+# Install
+
+$ pip install -r requirements.txt 
+```
+
+3. Poetry
+```
+# Install
+$ poetry install
+
+# enable
+$ poetry shell
+```
+
+
+## 4. 建置教學
 
 1. 建立 [LINE develops 帳戶](https://developers.line.biz/zh-hant/)，並新增 Messaging API channel 機器人
 
@@ -49,7 +61,7 @@ export CHANNEL_SECRET='yout line bot channel secret key'
 export google_sheet_url='https://docs.google.com/spreadsheets/d/kkkkkk-aaaaaa-ssssss/'
 ```
 
-### 4. 啟動
+## 5. 啟動
 
 都設置好後只需要在終端機中下 bash 指令，就可以啟動 LINE Bot 囉！
 
@@ -57,5 +69,5 @@ export google_sheet_url='https://docs.google.com/spreadsheets/d/kkkkkk-aaaaaa-ss
 $ bash boot.sh
 ``` 
 
-### 5. 貢獻
+## 5. 貢獻
 PRs are welcome!
