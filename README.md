@@ -28,7 +28,7 @@
 - [ ] 取得 Channel secret
 - [ ] 取得 Channel access token
 
-2. 串接 Google Sheet 操作，請參考這篇[python 串接 GoogleSheet 新增、讀取、更新和刪除 - Max行銷誌](https://www.maxlist.xyz/2018/09/25/python_googlesheet_crud/)
+2. 串接 Google Sheet 操作，請參考這篇 [python 串接 GoogleSheet 新增、讀取、更新和刪除 - Max行銷誌](https://www.maxlist.xyz/2018/09/25/python_googlesheet_crud/)
 - [ ] 取得 Google OAuth Credentials
 
 3. 將剛剛拿到的 Google OAuth Credentials 放到資料夾位置：`LINE-Bot-Template/bot/config/api-key.json`
