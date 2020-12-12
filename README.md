@@ -99,3 +99,16 @@ $ bash test.sh
 
 ## 6. Contributing
 PRs are welcome!
+
+
+## 7. 如果想客製自己的 LINE Bot
+我覺得 LINE Bot 部署可能比較容易遇到問題，所以寫了以下兩篇文章：
+* [[Flask – LINE Bot 教學] Heroku 一鍵自動部署](https://www.maxlist.xyz/2020/11/30/flask-line-bot-deploy-heroku/)
+* [[Flask – LINE Bot 教學] GCP 部署 (Docker+Flask+Nginx)](https://www.maxlist.xyz/2020/12/01/flask-line-bot-docker-flask-nginx-gcp/)
+
+在讀 LINE Bot SDK 的時候，也順手整理了一下驗證機制的部分：
+* [淺談 LINE-Bot 中的驗證機制 (HMAC & Bearer Token)](https://www.maxlist.xyz/2020/12/12/line-bot-sdk/)
+
+希望對你有幫助 :)
+
+
